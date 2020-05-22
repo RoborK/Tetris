@@ -1,0 +1,20 @@
+﻿<Window x:Name="NameWindow" x:Class="Tetris.InputName"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вы попали в таблицу рекордов!" Height="349.5" Width="549" MaxWidth="525" MaxHeight="570" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/fon.jpg" Stretch="None"/>
+    </Window.Background>
+    <Grid HorizontalAlignment="Left" Height="264" Margin="10,30,0,0" VerticalAlignment="Top" Width="506">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Введите своё имя: " HorizontalAlignment="Right" Margin="0,46,116,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="270" Height="56" FontSize="30" Background="White"/>
+        <TextBox x:Name="NameTB" Height="50" Margin="73,124,67,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="Победитель" VerticalAlignment="Top" FontSize="30" MaxLength="10" TextAlignment="Center" MaxLines="2" KeyUp="NameTB_KeyUp" KeyDown="NameTB_KeyDown" TextChanged="NameTB_TextChange"/>
+        <Button x:Name="button" Content="В Главное меню" Margin="164,194,150,0" Grid.RowSpan="2" FontSize="20" Click="button_Click" Height="42" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
