@@ -13,7 +13,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="Введите своё имя: " HorizontalAlignment="Right" Margin="0,46,116,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="270" Height="56" FontSize="30" Background="White"/>
+        <Label x:Name="label" Content="Введите своё имя:" HorizontalAlignment="Right" Margin="0,46,126,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="260" Height="56" FontSize="30" Foreground="White"/>
         <TextBox x:Name="NameTB" Height="50" Margin="73,124,67,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="Победитель" VerticalAlignment="Top" FontSize="30" MaxLength="10" TextAlignment="Center" MaxLines="2" KeyUp="NameTB_KeyUp" KeyDown="NameTB_KeyDown" TextChanged="NameTB_TextChange"/>
         <Button x:Name="button" Content="В Главное меню" Margin="164,194,150,0" Grid.RowSpan="2" FontSize="20" Click="button_Click" Height="42" VerticalAlignment="Top"/>
     </Grid>

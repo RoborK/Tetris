@@ -5,7 +5,13 @@
     <Window.Background>
         <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/BackGround.jpg" Stretch="None"/>
     </Window.Background>
-    <Grid HorizontalAlignment="Left" Height="488" Margin="174,10,0,0" VerticalAlignment="Top" Width="187">
+    <Grid Height="488" Margin="282,10,43,0" VerticalAlignment="Top">
+        <Label x:Name="label0" Content="Клавиши управления: " HorizontalAlignment="Right" Margin="-260,48,182,0" VerticalAlignment="Top" Width="270" Height="50" FontSize="25" Foreground="White"/>
+        <Label x:Name="label1" Content="&#129045; - перевернуть" HorizontalAlignment="Right" Margin="-260,110,182,0" VerticalAlignment="Top" Width="270" Height="42" FontSize="25" Foreground="White"/>
+        <Label x:Name="label2" Content="&#129047; - ускорить" HorizontalAlignment="Right" Margin="-260,142,182,0" VerticalAlignment="Top" Width="270" Height="42" FontSize="25" Foreground="White"/>
+        <Label x:Name="label3" Content="&#129046; - вправо" HorizontalAlignment="Right" Margin="-260,174,182,0" VerticalAlignment="Top" Width="270" Height="44" FontSize="25" Foreground="White"/>
+        <Label x:Name="label4" Content="&#129044; - влево" HorizontalAlignment="Right" Margin="-260,206,182,0" VerticalAlignment="Top" Width="270" Height="44" FontSize="25" Foreground="White"/>
+        <Label x:Name="label5" Content="Пробел - пауза" HorizontalAlignment="Right" Margin="-260,234,182,0" VerticalAlignment="Top" Width="270" Height="44" FontSize="25" Foreground="White"/>
         <Button x:Name="NewGameButton" Content="Начать игру" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="165" Height="50" Click="NewGameButton_Click" FontSize="18"/>
         <Button x:Name="ExitButton" Content="Выход" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top" Width="165" Height="50" Click="ExitButton_Click" FontSize="18"/>
         <Button x:Name="CustomButton" Content="Настройка" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="165" Height="50" Click="CustomButton_Click" FontSize="18"/>

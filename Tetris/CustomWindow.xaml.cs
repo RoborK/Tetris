@@ -35,7 +35,7 @@ namespace Tetris
 
         private void PrevFieldButton_Click(object sender, RoutedEventArgs e)
         {
-            indexField = (indexFig - 1 + AllFieldBrushes.Count) % AllFieldBrushes.Count;
+            indexField = (indexField - 1 + AllFieldBrushes.Count) % AllFieldBrushes.Count;
             ChangeColorField(AllFieldBrushes[indexField], AllFieldBrushes[indexGran]);
         }
 
@@ -47,14 +47,13 @@ namespace Tetris
 
         private void PrevGranButton_Click(object sender, RoutedEventArgs e)
         {
-
             indexGran = (indexGran - 1 + AllFieldBrushes.Count) % AllFieldBrushes.Count;
             ChangeColorField(AllFieldBrushes[indexField], AllFieldBrushes[indexGran]);
         }
 
         private void NextFieldButton_Click(object sender, RoutedEventArgs e)
         {
-            indexField = (indexField +1) % AllFieldBrushes.Count;
+            indexField = (indexField + 1) % AllFieldBrushes.Count;
             ChangeColorField(AllFieldBrushes[indexField], AllFieldBrushes[indexGran]);
         }
 
